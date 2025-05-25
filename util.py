@@ -14,7 +14,8 @@ def get_limits(color : list)->list:
     lower_limit = max(h - 5, 0), 100, 100
     upper_limit = min(hsvC[0][0][0] + 5, 179), 255, 255
 
+    #transfer limits to np arrays
     lower_limit = np.array(lower_limit, dtype=np.uint8)
     upper_limit = np.array(upper_limit, dtype=np.uint8)
-    print("Hi")
+    
     return lower_limit, upper_limit
