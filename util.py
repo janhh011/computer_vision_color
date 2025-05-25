@@ -16,5 +16,5 @@ def get_limits(color : list)->list:
 
     lower_limit = np.array(lower_limit, dtype=np.uint8)
     upper_limit = np.array(upper_limit, dtype=np.uint8)
-
+    print("Hi")
     return lower_limit, upper_limit
